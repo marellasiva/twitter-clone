@@ -1,0 +1,161 @@
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Tweet text styling */
+.tweet-text {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.tweet-text .hashtag {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.tweet-text .hashtag:hover {
+  text-decoration: underline;
+}
+
+.tweet-text .mention {
+  color: #1d9bf0;
+  text-decoration: none;
+}
+
+.tweet-text .mention:hover {
+  text-decoration: underline;
+}
+
+/* Loading animation */
+.loading-spinner {
+  border: 2px solid #333;
+  border-top: 2px solid #1d9bf0;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Button hover effects */
+.btn-primary {
+  background-color: #1d9bf0;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #1a8cd8;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #333;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #1a1a1a;
+  border-color: #555;
+}
+
+/* Tweet interaction buttons */
+.tweet-action {
+  transition: all 0.2s;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+.tweet-action:hover {
+  background-color: rgba(29, 155, 240, 0.1);
+}
+
+.tweet-action.liked {
+  color: #f91880;
+}
+
+.tweet-action.liked:hover {
+  background-color: rgba(249, 24, 128, 0.1);
+}
+
+/* Form styling */
+.form-input {
+  background-color: transparent;
+  border: 1px solid #333;
+  border-radius: 4px;
+  padding: 12px;
+  color: white;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #1d9bf0;
+}
+
+.form-input::placeholder {
+  color: #666;
+}
+
+/* Tweet composer */
+.tweet-composer {
+  border-bottom: 1px solid #2f3336;
+  padding: 16px;
+}
+
+.tweet-composer textarea {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 20px;
+  resize: none;
+  width: 100%;
+  min-height: 120px;
+}
+
+.tweet-composer textarea:focus {
+  outline: none;
+}
+
+.tweet-composer textarea::placeholder {
+  color: #666;
+}
+
+/* Profile styling */
+.profile-banner {
+  height: 200px;
+  background: linear-gradient(135deg, #1d9bf0, #8b5cf6);
+}
+
+.profile-avatar {
+  border: 4px solid black;
+  margin-top: -68px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+  
+  .main-content {
+    margin-left: 0;
+  }
+}
